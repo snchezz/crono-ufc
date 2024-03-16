@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cronómetro</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="content">
+    <div class="text-container">
+      <div class="timer-container">
+        <div id="timer" class="timer">05:00</div>
+        <div class="rounds-container">
+          <div class="round" id="round1"></div>
+          <div class="round" id="round2"></div>
+          <div class="round" id="round3"></div>
+          <div class="round" id="round4"></div>
+          <div class="round" id="round5"></div>
+        </div>
+        <div id="round-status">Round 1</div>
+
+      </div>
+    </div>
+  </div>
+  <img src="img/prueba2.png" alt="Imagen de pruebas" class="centered-image">
+</div>
+
+<div class="control-panel">
+    <div id="size-info">
+        Tamaño del cronómetro: <span id="timer-size">140px</span><br>
+        Tamaño del texto de round: <span id="round-size">30px</span>
+      </div>
+  <button onclick="restartTimer(5)">Reiniciar a 5 min</button>
+  <button onclick="restartTimer(3)">Reiniciar a 3 min</button>
+  <button onclick="nextRound()">Siguiente Round</button>
+  <button onclick="resetRounds()">Reiniciar Rounds</button>
+  <button onclick="increaseFontSize()">Aumentar Tamaño Round</button>
+  <button onclick="decreaseFontSize()">Disminuir Tamaño Round</button>
+  <button onclick="increaseTimerSize()">Aumentar Tamaño Cronómetro</button>
+  <button onclick="decreaseTimerSize()">Disminuir Tamaño Cronómetro</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

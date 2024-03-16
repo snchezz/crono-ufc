@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Sonic Extra Bold';
+    src: url('text/Sonic Extra Bold.otf') format('opentype');
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #15fd02;
+}
+
+.container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    position: absolute;
+    text-align: center;
+}
+
+.centered-image {
+    max-width: 45%;
+    max-height: 45%;
+    height: auto;
+}
+
+.timer-container {
+    font-family: 'Sonic Extra Bold', sans-serif;
+    color: #d4b741;
+}
+
+.timer {
+    font-size: 140px;
+}
+
+.rounds-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.round {
+    width: 40px;
+    height: 20px;
+    border: 3px solid #d4b741;
+    margin: 0 5px;
+    background-color: transparent;
+}
+
+#round-status {
+    margin-top: 10px;
+    font-size: 30px;
+}
+
+.control-panel {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.control-panel button {
+    margin: 0 10px;
+}
