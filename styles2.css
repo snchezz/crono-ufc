@@ -25,8 +25,8 @@
     }
 
     .centered-image {
-        max-width: 45%;
-        max-height: 45%;
+        max-width: 90%;
+        max-height: 90%;
         height: auto;
         position: absolute;
         top: 50%;
@@ -41,13 +41,13 @@
     }
 
     .timer {
-        font-size: 140px;
+        font-size: 190px;
     }
 
     .rounds-container {
         display: flex;
         justify-content: center;
-        margin-top: 20px;
+        margin-top: -10px;
     }
 
     .round {
@@ -56,14 +56,12 @@
         background-color: #ccc;
         border-radius: 25%;
         display: inline-block;
-        margin-right: 10px;
+        margin-right: 11px;
         font-size: 25px; /* Tamaño del texto constante */
         line-height: 50px; /* Alinear verticalmente el texto */
         text-align: center; /* Alinear horizontalmente el texto */
     }
     
-
-
     .round.filled {
         background-color: #d4b741; /* Color de fondo para los rounds rellenos */
         color: #fff; /* Color de texto para los rounds rellenos */

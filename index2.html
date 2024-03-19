@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cronómetro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles2.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="row">
+        <div class="col l6 s12">
+            <div class="container">
+                <div class="content">
+                    <div class="text-container">
+                        <div class="timer-container">
+                            <div id="timer" class="timer">05:00</div>
+                            <div class="rounds-container">
+                                <div class="round"></div>
+                                <div class="round"></div>
+                                <div class="round"></div>
+                                <div class="round"></div>
+                                <div class="round"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <img src="img/prueba2.png" alt="Imagen de pruebas" class="centered-image">
+            </div>
+        </div>
+
+
+        <div class="col l6 s12">
+            <b>Funcionalidades</b><br>
+            <a onclick="restartTimer(5)" class="waves-effect waves-light btn"><i
+                    class="material-icons right">access_alarm</i>Reiniciar a 5 min</a>
+            <a onclick="nextRound()" class="waves-effect waves-light btn"><i
+                    class="material-icons right">arrow_forward</i>Siguiente Round</a>
+            <a onclick="resetRounds()" class="waves-effect waves-light btn"><i
+                    class="material-icons right">autorenew</i>Reiniciar Rounds</a>
+            <a onclick="setRoundsCount(3)" class="waves-effect waves-light btn"><i
+                    class="material-icons right">looks_3</i>3 Rounds</a>
+            <a onclick="setRoundsCount(5)" class="waves-effect waves-light btn"><i
+                    class="material-icons right">looks_5</i>5 Rounds</a>
+
+
+
+            <br><br>
+
+            <b>Cronómetro</b>
+            <br>
+            <a onclick="increaseTimerSize()" class="waves-effect waves-light btn"><i
+                    class="material-icons right">exposure_plus_1</i>Aumentar Tamaño Cronómetro</a>
+            <a onclick="decreaseTimerSize()" class="waves-effect waves-light btn"><i
+                    class="material-icons right">exposure_neg_1</i>Disminuir Tamaño Cronómetro</a>
+            <br>
+            <a onclick="increaseMargin('.timer-container')" class="waves-effect waves-light btn"><i
+                    class="material-icons right">expand_less</i>Aumentar Margen Cronómetro</a>
+            <a onclick="decreaseMargin('.timer-container')" class="waves-effect waves-light btn"><i
+                    class="material-icons right">expand_more</i>Disminuir Margen Cronómetro</a>
+            <br>
+            <b>Rounds</b>
+            <br>
+            <a onclick="increaseRoundSize()" class="waves-effect waves-light btn"><i
+                    class="material-icons right">add</i>Aumentar Tamaño Rounds</a>
+            <a onclick="decreaseRoundSize()" class="waves-effect waves-light btn"><i
+                    class="material-icons right">remove</i>Disminuir Tamaño Rounds</a>
+            <br>
+            <a onclick="increaseRoundBlockSize()" class="waves-effect waves-light btn"><i
+                    class="material-icons right">add</i>Aumentar Tamaño de los Bloques</a>
+            <a onclick="decreaseRoundBlockSize()" class="waves-effect waves-light btn"><i
+                    class="material-icons right">remove</i>Disminuir Tamaño de los Bloques</a>
+            <br> 
+            <a onclick="increaseMargin('.rounds-container')" class="waves-effect waves-light btn"><i
+                    class="material-icons right">expand_less</i>Aumentar Margen Rounds</a>
+            <a onclick="decreaseMargin('.rounds-container')" class="waves-effect waves-light btn"><i
+                    class="material-icons right">expand_more</i>Disminuir Margen Rounds</a>
+
+
+        </div>
+  
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
